@@ -1,0 +1,20 @@
+{
+    "description": "My Personal NFT project that I deployed using Week1 lecture knowledge.", 
+    "external_url": "https://www.alchemy.com/", 
+    "image": "https://ipfs.filebase.io/ipfs/QmdWA5hGsY2Tu7vCb6q1RtmerVSPp3uTD6uXyo9gTLjft8", 
+    "name": "ERC721 PoK",
+    "attributes": [
+        {
+          "trait_type": "Project", 
+          "value": "Completed"
+        }, 
+        {
+          "trait_type": "Website", 
+          "value": "Alchemy.com"
+        },
+        {
+          "trait_type": "token Standard", 
+          "value": "ERC721"
+        }
+      ]
+    }
