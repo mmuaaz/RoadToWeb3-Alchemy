@@ -2,7 +2,7 @@ import Head from "next/head"
 import Image from "next/image"
 //import dotenv from "dotenv"
 import { useState } from "react"
-import { NFTCard } from "./components/nftCard"
+import NFTCard from "./components/nftCard"
 const Home = () => {
     const [wallet, setWalletAddress] = useState("") //This will populate the first element with the variable value and then the second with the function
     //to set and update it  ; we are initializing it with a string
