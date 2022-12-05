@@ -11,3 +11,8 @@
 // RUN COMM: yarn add prettier
 //
 // copy your hardhat.config.js and .env files
+;/Writing COntract for on_Chain NFT metadata/
+;/Write deploy script/
+// RUN COMM: npx hardhat run scripts/deploy.js --network mumbai
+;/Verify your contract/
+// RUN COMM: npx hardhat verify <deploy contract address> --network mumbai

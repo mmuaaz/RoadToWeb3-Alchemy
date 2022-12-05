@@ -1,4 +1,4 @@
-export const NFTCard = ({ nft }) => {
+const NFTCard = ({ nft }) => {
     return (
         <div className="w-1/4 flex flex-col ">
             <div className="rounded-md">
@@ -35,3 +35,4 @@ export const NFTCard = ({ nft }) => {
         </div>
     )
 }
+export default NFTCard

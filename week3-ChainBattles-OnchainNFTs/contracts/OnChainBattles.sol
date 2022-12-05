@@ -21,7 +21,7 @@ contract OnChainBattles is ERC721URIStorage {
     //creating SVGs is not supported on solidity
     //using abi.encodePacked library to concatenate strings
 
-    function generateCharacter(uint256 tokenId) public returns (string memory) {
+    function generateCharacter(uint256 tokenId) public view returns (string memory) {
         bytes memory svg = abi.encodePacked(
             '<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 350 350">',
             "<style>.base { fill: white; font-family: serif; font-size: 14px; }</style>",
@@ -52,7 +52,7 @@ contract OnChainBattles is ERC721URIStorage {
 
     //we need this to be a String because "abi.encodePacked" must always resolve to strings
 
-    function getTokenURI(uint256 tokenId) public returns (string memory) {
+    function getTokenURI(uint256 tokenId) public view returns (string memory) {
         bytes memory dataURI = abi.encodePacked(
             "{",
             '"name": "Chain Battles #',

@@ -13,6 +13,7 @@ const PRIVATE_KEY = process.env.PRIVATE_KEY || "0x"
 
 const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY || ""
 const POLYGON_TEST_RPC_URL = process.env.POLYGON_TEST_RPC_URL || blablabla
+const POLYGONSCAN_API_KEY = process.env.POLYGONSCAN_API_KEY || maybesomethingelse
 //const REPORT_GAS = process.env.REPORT_GAS || false
 //const COINMARKETCAP_API_KEY = process.env.COINMARKETCAP_API_KEY
 const MAINNET_RPC_URL = process.env.MAINNET_RPC_URL || abc
@@ -70,7 +71,15 @@ module.exports = {
         apiKey: {
             goerli: ETHERSCAN_API_KEY,
         },
+        apiKey: {
+            polygonMumbai: POLYGONSCAN_API_KEY,
+        },
     },
+    // polygonscan: {
+    //     apiKey: {
+    //         mumbai: POLYGONSCAN_API_KEY,
+    //     },
+    // },
     // mocha: {
     //     timeout: 100000000, // 500 seconds max for running tests
     // },
